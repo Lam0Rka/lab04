@@ -75,13 +75,13 @@ EOF
 ```
 2. Создание скрипта, который выполняет команды cmake
 ```sh
-cmake formatter_lib/CMakeLists.txt -Bformatter_lib/_build -DCMAKE_CURRENT_SOURCE_DIR=/home/anya/navckin/workspace/projects/lab44
+cmake formatter_lib/CMakeLists.txt -Bformatter_lib/_build -DCMAKE_CURRENT_SOURCE_DIR=/home/bogdan/bogdan1/workspace/projects/lab04
 cmake --build formatter_lib/_build
-cmake formatter_ex_lib/CMakeLists.txt -Bformatter_ex_lib/_build -DCMAKE_CURRENT_SOURCE_DIR=/home/anya/navckin/workspace/projects/lab44
+cmake formatter_ex_lib/CMakeLists.txt -Bformatter_ex_lib/_build -DCMAKE_CURRENT_SOURCE_DIR=/home/bogdan/bogdan1/workspace/projects/lab04
 cmake --build formatter_ex_lib/_build
-cmake hello_world_application/CMakeLists.txt -Bhello_world_application/_build -DCMAKE_CURRENT_SOURCE_DIR=/home/anya/navckin/workspace/projects/lab44
+cmake hello_world_application/CMakeLists.txt -Bhello_world_application/_build -DCMAKE_CURRENT_SOURCE_DIR=/home/bogdan/bogdan1/workspace/projects/lab04
 cmake --build hello_world_application/_build
-cmake solver_application/CMakeLists.txt -Bsolver_application/_build -DCMAKE_CURRENT_SOURCE_DIR=/home/anya/navckin/workspace/projects/lab44
+cmake solver_application/CMakeLists.txt -Bsolver_application/_build -DCMAKE_CURRENT_SOURCE_DIR=/home/bogdan/bogdan1/workspace/projects/lab04
 cmake --build solver_application/_build
 ```
 3. Установка пользовательского сценария запуска с помощью CMake. 
