@@ -1,5 +1,5 @@
-## Laboratory work IV
-[![Build Status](https://travis-ci.com/Lam0Rka/lab04.svg?branch=main)](https://travis-ci.com/Lam0Rka/lab04)
+## Laboratory work IV [![Build Status](https://travis-ci.com/Lam0Rka/lab04.svg?branch=main)](https://travis-ci.com/Lam0Rka/lab04)
+
 Данная лабораторная работа посвещена изучению систем непрерывной интеграции на примере сервиса **Travis CI**
 
 ```sh
