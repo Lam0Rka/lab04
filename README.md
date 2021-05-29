@@ -37,7 +37,7 @@ $ open https://travis-ci.org
 5. Обновить GitHub и увидеть значок
 
 
-1. Cоздание единого CMakeLists.txt
+1. Cоздание CMakeLists.txt для сборки.
 ```sh
 cmake_minimum_required(VERSION 3.4)
 project(formatter)
@@ -61,7 +61,7 @@ include_directories(solver_lib)
 add_executable(solver solver_application/equation.cpp)
 target_link_libraries(solver formatter formatter_ex solver_lib)
 ```
-Создание файла .travis.yml, где определяем язык программирования, опер. систем. и компиляторы.
+2. Заполнение и ссоздание айла .travis.yml
 ```sh
 $ cat > .travis.yml <<EOF
 language: cpp
@@ -73,7 +73,7 @@ os:
  - linux
 EOF
 ```
-2. Создание скрипта, который выполняет команды cmake
+2. Создание скрипта для того, чтобы было возможным собрать по проекту в каждой директории.
 ```sh
 cmake formatter_lib/CMakeLists.txt -Bformatter_lib/_build -DCMAKE_CURRENT_SOURCE_DIR=/home/bogdan/bogdan1/workspace/projects/lab04
 cmake --build formatter_lib/_build
@@ -98,7 +98,7 @@ jobs:
     - source ./script
 EOF
 ```
-4. Установка дополнительных исполняемых файлов и пакетов.
+4. Установка доп. файлов.
 ```sh
 $ cat >> .travis.yml <<EOF
 addons:
@@ -116,7 +116,7 @@ EOF
 $ travis lint
 Hooray, .travis.yml looks valid :)
 ```
-
+УРА УРА УРА! все работает :)
 
 
 
