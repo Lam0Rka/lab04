@@ -37,6 +37,7 @@ $ open https://travis-ci.org
 5. Обновить GitHub и увидеть значок
 
 
+
 1. Cоздание CMakeLists.txt для сборки.
 ```sh
 cmake_minimum_required(VERSION 3.4)
