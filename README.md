@@ -62,7 +62,7 @@ include_directories(solver_lib)
 add_executable(solver solver_application/equation.cpp)
 target_link_libraries(solver formatter formatter_ex solver_lib)
 ```
-2. Заполнение и ссоздание айла .travis.yml
+2. Заполнение и создание файла .travis.yml
 ```sh
 $ cat > .travis.yml <<EOF
 language: cpp
